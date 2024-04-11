@@ -13,10 +13,12 @@ public class TestMatrici {
         //Inserimento
         for (int i=0;i<righe;i++){
             for (int j=0;j<righe;j++){
-                System.out.println("Inserire elemento "+i+" "+j+": ");
+                System.out.println("Inserire elemento "+(i+1)+" "+(j+1)+": ");
                 m[i][j]=in.nextInt();
             }
         }
+        // Stampa dell'array inserito
+        System.out.println(Matrici.Stampa(m));
         //Stampa del risultato
         if(Matrici.isSimmetricaDiagMaggiore(m))
             System.out.println("La matrice m è simmetrica rispetto la diagonale maggiore");
@@ -30,6 +32,8 @@ public class TestMatrici {
                 {3,4,0,13},
                 {8,11,13,0}
         };
+        // Stampa dell'array inserito
+        System.out.println(Matrici.Stampa(m3));
         if(Matrici.isSimmetricaDiagMaggiore(m3))
             System.out.println("La matrice m3 è simmetrica rispetto la diagonale maggiore");
         else
